@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>小程序开发中的问题 | 快乐的小丑</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/static/image/logo.jpg">
+    <script language="javascript" type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/MouseClickEffect.js"></script>
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.13f38f88.css" as="style"><link rel="preload" href="/assets/js/app.e32bf087.js" as="script"><link rel="preload" href="/assets/js/3.9f375187.js" as="script"><link rel="preload" href="/assets/js/1.2449ce55.js" as="script"><link rel="preload" href="/assets/js/41.26c8593b.js" as="script"><link rel="prefetch" href="/assets/js/10.e6e8b5c8.js"><link rel="prefetch" href="/assets/js/11.3329ba97.js"><link rel="prefetch" href="/assets/js/12.8136af58.js"><link rel="prefetch" href="/assets/js/13.9638c204.js"><link rel="prefetch" href="/assets/js/14.639d7759.js"><link rel="prefetch" href="/assets/js/15.d8b5b30f.js"><link rel="prefetch" href="/assets/js/16.33a12b57.js"><link rel="prefetch" href="/assets/js/17.ae80f00c.js"><link rel="prefetch" href="/assets/js/18.a7f37ba2.js"><link rel="prefetch" href="/assets/js/19.8c3caaba.js"><link rel="prefetch" href="/assets/js/20.1db8020a.js"><link rel="prefetch" href="/assets/js/21.1edf87ff.js"><link rel="prefetch" href="/assets/js/22.4671fc1e.js"><link rel="prefetch" href="/assets/js/23.7f76a2da.js"><link rel="prefetch" href="/assets/js/24.445097df.js"><link rel="prefetch" href="/assets/js/25.2911b283.js"><link rel="prefetch" href="/assets/js/26.b9865e07.js"><link rel="prefetch" href="/assets/js/27.fdde3f1e.js"><link rel="prefetch" href="/assets/js/28.b98c3fd4.js"><link rel="prefetch" href="/assets/js/29.f41ca7dd.js"><link rel="prefetch" href="/assets/js/30.2373d6c2.js"><link rel="prefetch" href="/assets/js/31.cc15243a.js"><link rel="prefetch" href="/assets/js/32.6db621fb.js"><link rel="prefetch" href="/assets/js/33.a1c63309.js"><link rel="prefetch" href="/assets/js/34.14823e3e.js"><link rel="prefetch" href="/assets/js/35.7bce5687.js"><link rel="prefetch" href="/assets/js/36.649d4a12.js"><link rel="prefetch" href="/assets/js/37.21fa3a10.js"><link rel="prefetch" href="/assets/js/38.e43efa50.js"><link rel="prefetch" href="/assets/js/39.6e630bb0.js"><link rel="prefetch" href="/assets/js/4.708f981d.js"><link rel="prefetch" href="/assets/js/40.86339c01.js"><link rel="prefetch" href="/assets/js/5.c6a7aaa6.js"><link rel="prefetch" href="/assets/js/6.47906c7a.js"><link rel="prefetch" href="/assets/js/7.f855d5d5.js"><link rel="prefetch" href="/assets/js/8.d3caa70c.js"><link rel="prefetch" href="/assets/js/9.3d3706c8.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.13f38f88.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-dad8a512><div data-v-dad8a512><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-dad8a512 data-v-dad8a512><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-dad8a512 data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>快乐的小丑</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>小丑</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div class="hide" data-v-dad8a512><header class="navbar" data-v-dad8a512><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">快乐的小丑</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/clown-Jack/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-dad8a512></div> <aside class="sidebar" data-v-dad8a512><div class="personal-info-wrapper" data-v-ca798c94 data-v-dad8a512><img src="/avator.jpg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    小丑
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>19</h3> <h6 data-v-ca798c94>文章</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>10</h3> <h6 data-v-ca798c94>标签</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      分类
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/categories/前端/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></li></ul></div></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  TimeLine
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-message"></i>
+      联系
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/clown-Jack/" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="iconfont reco-github"></i>
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-dad8a512><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>小程序开发中的问题</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>小丑</span>
+            
+          <!---->
+          2021
+        </a></span></div></div> <div data-v-dad8a512><main class="page"><div class="page-title" style="display:none;"><h1>小程序开发中的问题</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>小丑</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2020-09-01</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/pre/wx/base.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>微信小程序</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="小程序开发"><a href="#小程序开发" class="header-anchor">#</a> <a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0002c8979d0678bb00862b8595b00a" target="_blank" rel="noopener noreferrer">小程序开发<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h1> <h2 id="小程序与普通网页开发的区别"><a href="#小程序与普通网页开发的区别" class="header-anchor">#</a> 小程序与普通网页开发的区别</h2> <p>1.网页开发渲染线程和脚本线程是一个进程，而小程序二者是分开的，分别运行在不同的线程。
+2.网页开发者可以操作DOM和BOM，小程序缺少操作DOM和BOM的方法。导致了例如JQ。Zepto等，在小程序中无法运行
+3.小程序的运行环境和node.js环境也不相同，所以一些npm的包在小程序中也是无法运行的</p> <ul><li>从小程序基础库版本2.2.1开始支持使用npm安装第三方包</li></ul> <h2 id="小程序的开发流程"><a href="#小程序的开发流程" class="header-anchor">#</a> 小程序的开发流程</h2> <p>1.注册小程序账号
+&gt; 为了获取AppID，AppID就像是我们的身份证一样，是唯一的而且很重要，后续的所有开发流程会基于这个AppID来完成</p> <ul><li>直接在微信小程序的官网注册</li> <li>通过微信公众号注册
+<blockquote><p>条件是已经有微信公众号（并且是企业级，个人不可以）
+优点是如果公众号已经认证过了，小程序不需要再次认证，省去了认证的时间和费用
+2.安装开发者工具
+3.开发/测试/上传代码（上传到微信服务器）
+4.提交审核
+5.发布上线 发布小程序以后，我们才能在微信中搜索到我们开发的小程序
+6.错误查询/性能监控 登录官网-&gt;开发-&gt;运维中心</p></blockquote></li></ul> <h2 id="如何让vscode支持编写小程序代码"><a href="#如何让vscode支持编写小程序代码" class="header-anchor">#</a> 如何让vscode支持编写小程序代码</h2> <blockquote><p>https://www.jianshu.com/p/27aaa647c5c5</p></blockquote> <h2 id="微信开发者工具的安装及使用"><a href="#微信开发者工具的安装及使用" class="header-anchor">#</a> 微信开发者工具的安装及使用</h2> <blockquote><p><a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <h2 id="注意事项"><a href="#注意事项" class="header-anchor">#</a> 注意事项</h2> <p>1.小程序中不能嵌套小程序
+2.创建小程序项目 不能是云开发 代码块</p> <h2 id="快速创建小程序"><a href="#快速创建小程序" class="header-anchor">#</a> 快速创建小程序</h2> <ul><li>有AppID 我们可以在官网 -&gt;开发-&gt;开发设置 找到AppID</li> <li>没有AppID 我们可以使用小程序提供的测试号开发 （不能上传代码 只能做练习用）</li></ul> <h2 id="小程序的目录结构"><a href="#小程序的目录结构" class="header-anchor">#</a> 小程序的目录结构</h2> <p>1.pages 这里的每一个文件夹都代表一个小程序的页面
+2.app.js 全局逻辑代码
+2.app.json 全局配置文件
+3.app.wxss 全局样式文件</p> <h2 id="小程序4种文件类型"><a href="#小程序4种文件类型" class="header-anchor">#</a> 小程序4种文件类型</h2> <p>1.js 逻辑文件
+2.json  配置文件
+3.wxml 是小程序框架设计的一套标签语言 结合小程序的基础组件 事件系统 可以构建出页面结构</p> <ul><li>与html区别是他不能使用我们熟悉的span p div等标签 而是使用小程序给我们提供的各种组件
+4.wxss 小程序样式组件</li></ul> <h2 id="js"><a href="#js" class="header-anchor">#</a> js</h2> <p>1.脚本的执行顺序</p> <blockquote><p>当app.js 执行结束后,小程序会按照开发者在app.json 中定义的pages的顺序，逐一执行
+2.作用域
+同浏览器中运行的脚本文件有所不同，小程序的脚本的作用域同NodeJS更为相似。在文件中声明的变量和函数只在该文件中有效。不同的文件中可以声明相同名字和变量和函数，不会相互影响</p></blockquote> <h2 id="wxss"><a href="#wxss" class="header-anchor">#</a> wxss</h2> <ol><li>小程序的尺寸单位rpx，<strong><code>可以根据屏幕宽度进行自适应</code></strong> 规定屏幕宽度750rpx 如在iphone6上，屏幕宽度为375px,共有750个物理像素，则750rpx = 375px = 750物理像素，1rpx = 0.5px = 1物理像素</li> <li>定义在app.wxss中的样式为全局样式，它会被注入到每个小程序的每个页面，在page的wxss文件中定义的样式为局部样式，只作用在对应的页面，并会覆盖app.wxss中的相同的配置（就近原则）</li> <li>样式的导入
+在css中，开发者可以这样引用另一个样式文件：@import url('./test.css')
+在小程序中，我们依然可以实现样式的引用，样式引用是这样写：@import './test.wxss'
+官方样式库：https://github.com/Tencent/weui-wxss</li> <li>高度自适应
+height:auto不生效  用mode属性widthFix</li></ol> <blockquote><p><a href="https://developers.weixin.qq.com/miniprogram/dev/component/image.html" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <ol start="5"><li>添加背景颜色
+每个页面最外层都有一个page ，在page上加样式即可</li> <li>获取用户信息open-data</li></ol> <blockquote><p><a href="https://developers.weixin.qq.com/miniprogram/dev/component/open-data.html" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <ol start="7"><li>view和text的区别
+text在真机调试的时候长按会选中   view里的文字不会</li></ol> <h2 id="数据绑定"><a href="#数据绑定" class="header-anchor">#</a> 数据绑定</h2> <ol><li>数据绑定</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;image open-data=&quot;userAvatarUrl&quot; mode=&quot;widthFix&quot; src=&quot;{{avatarUrl}}&quot;&gt;&lt;/image&gt;
+Page({
+	data: {
+	     avatarUrl:&quot;&quot;,
+	  },
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="2"><li>属性（需要在双引号之内）</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;view id=&quot;{{id}}&quot;&gt;&lt;/view&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="3"><li>运算符</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;view hiiden=&quot;{{flag?true:false}}&quot;&gt;Hidden&lt;/view&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="4"><li>其他</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;view&gt;{{&quot;hello&quot;+name}}&lt;/view&gt;
+&lt;view&gt;{{name}}{{age}}&lt;/view&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="判断语句"><a href="#判断语句" class="header-anchor">#</a> 判断语句</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;view class=&quot;container&quot;&gt;
+   &lt;block wx:if=&quot;{{avatarUrl}}&quot;&gt;
+      &lt;image  mode=&quot;widthFix&quot; src=&quot;{{avatarUrl}}&quot;&gt;&lt;/image&gt;
+      &lt;text&gt;{{nickName}}&lt;/text&gt;
+   &lt;/block&gt;
+   &lt;button  wx:else open-type=&quot;getUserInfo&quot; bindgetuserinfo=&quot;onGetUserInfo&quot;&gt;授权按钮&lt;/button&gt;
+&lt;/view&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><p>block组件和view的区别:</p></blockquote> <ul><li>block类似于react&lt;&gt;&lt;/&gt; 经常配合wx:if使用</li></ul> <h2 id="事件绑定及事件处理函数"><a href="#事件绑定及事件处理函数" class="header-anchor">#</a> 事件绑定及事件处理函数</h2> <blockquote><p>事件是视图层到逻辑层的通讯方式，可以将用户的行为反馈到逻辑层进行处理
+事件对象可以携带额外信息，如id，dataset</p></blockquote> <ul><li>事件分类
+<ul><li>冒泡事件</li> <li>非冒泡事件</li></ul></li> <li>事件绑定
+<ul><li>事件绑定的写法同组件的属性 以key、value的形式</li></ul> <blockquote><p>key 以bind或catch开头，然后跟上事件的类型，如bindtap。catchtap</p></blockquote></li> <li>事件对象
+type 代表事件类型
+timeStamp 页面打开到触发事件所经过的毫秒数
+target 触发事件的源组件
+currentTarget 事件绑定的当前组件
+<ul><li>id 事件源组件的id</li> <li>tagName 当前组件的类型</li> <li>dataset 事件源组件上有data-开头的自定义属性组成的集合</li></ul></li></ul> <blockquote><p>以data-开头，多个单词有连字符-连接 不能有大写(大写会自动转成小写)。如data-element-type，最终在event.currentTarget.dataset中会将连字符转成驼峰elementType</p></blockquote> <h2 id="页面跳转"><a href="#页面跳转" class="header-anchor">#</a> 页面跳转</h2> <p>wx.navigateTo</p> <h2 id="设置tapbar-app-json"><a href="#设置tapbar-app-json" class="header-anchor">#</a> 设置tapBar-&gt;app.json</h2> <p><a href="https://developers.weixin.qq.com/miniprogram/dev/extended/weui/tabbar.html#%E5%B1%9E%E6%80%A7%E5%88%97%E8%A1%A8" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;tabBar&quot;: {
+    &quot;custom&quot;: true,
+    &quot;color&quot;: &quot;#000000&quot;,
+    &quot;selectedColor&quot;: &quot;#000000&quot;,
+    &quot;backgroundColor&quot;: &quot;#000000&quot;,
+    &quot;list&quot;: [{
+      &quot;pagePath&quot;: &quot;page/component/index&quot;,
+      &quot;text&quot;: &quot;组件&quot;
+    }, {
+      &quot;pagePath&quot;: &quot;page/API/index&quot;,
+      &quot;text&quot;: &quot;接口&quot;
+    }]
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><h2 id="配置导航样式"><a href="#配置导航样式" class="header-anchor">#</a> 配置导航样式</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code> &quot;window&quot;:{
+    &quot;navigationBarBackgroundColor&quot;: &quot;#ffffff&quot;,
+    &quot;navigationBarTextStyle&quot;: &quot;black&quot;,
+    &quot;navigationBarTitleText&quot;: &quot;微信接口功能演示&quot;,
+    &quot;backgroundColor&quot;: &quot;#eeeeee&quot;,
+    &quot;backgroundTextStyle&quot;: &quot;light&quot;
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><blockquote><p>pages里面的每个页面可以单独设置window里的属性  usingComponents是一个自定义组件</p></blockquote> <h2 id="设置超时"><a href="#设置超时" class="header-anchor">#</a> 设置超时</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code> &quot;networkTimeout&quot;: {
+    &quot;request&quot;: 20000,
+    &quot;connectSocket&quot;: 20000,
+    &quot;uploadFile&quot;: 20000,
+    &quot;downloadFile&quot;: 20000
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="实现swiper组件"><a href="#实现swiper组件" class="header-anchor">#</a> 实现swiper组件</h2> <p>1.indicator-dots false 是否显示面板指示点
+2.indicator-color rgba 指示点颜色
+3.indicator-active-color #000 当前选中的指示点颜色
+4.autoplay false 是否自动切换
+5.interval 5000 自动切换时间间隔
+6.duration 500 滑动动画时长
+7.circular false 是否采用衔接滑动
+8.vertical false 滑动方向是否为纵向</p> <ul><li>swiper-item 仅可设置在swiper组件中，宽高自动设置为100%。<strong>给swiper-item设置高度不起作用，要给swiper设置高度才有用</strong></li></ul> <h2 id="列表渲染"><a href="#列表渲染" class="header-anchor">#</a> 列表渲染</h2> <p>wx:for={{}}</p> <blockquote><p>在组件上使用wx:for 控制属性绑定一个数组，既可使用数组中各项的数据重复渲染该组件
+默认数组的当前项的下标变量名默认为index，数组当前项的变量默认为item</p></blockquote> <ul><li>使用wx:for-item可以指定数组当前元素的变量名</li> <li>使用wx:for-index可以指定数组当前下标的变量名</li> <li>wx:for 也可以嵌套</li> <li>wx:key</li></ul> <blockquote><p>wx:key的意义是为列表中遍历的每一个元素指定一个唯一的标识。当数据改变触发渲染层重新渲染的时候，确保使组件保持自身状态并提高列表渲染时的效率</p></blockquote> <ol><li>如果被遍历的属猪中的元素是object，我们可以使用它的某一个值，这个值必须是不重复的数组或者字符串</li> <li>如果被遍历的数组中的元素是数组或者是字符串*this 代表在for循环中的额item本身。</li></ol> <h2 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h2> <ol><li>onLoad  可以接受参数  最先执行，初始化的时候先执行onLoad onReady,请求接口一般都放到这里面 <strong>只有页面初始化的时候加载一次</strong></li> <li>onShow  <strong>每次进来都会执行</strong>  生命周期函数--监听页面显示</li> <li>onReady  生命周期函数--监听页面初次渲染完成</li> <li>onHide   生命周期函数--监听页面隐藏</li> <li>onUnload  生命周期函数--监听页面卸载</li></ol> <h2 id="转发分享"><a href="#转发分享" class="header-anchor">#</a> 转发分享</h2> <blockquote><p>只有页面js中监听了onShareAppMessage事件函数，右上角菜单才会显示&quot;转发&quot;按钮。</p></blockquote> <ul><li>自定义转发内容</li></ul> <blockquote><p>只需要在事件处理函数中return 一个对象，实例如下</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>onShareAppMessage(){
+	return {
+		title:&quot;自定义转发标题&quot;,
+		path:&quot;/page/user?id=123&quot;,
+		imageUrl:&quot;&quot;
+	}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ul><li>默认转发内容</li></ul> <blockquote><p>如果我们没有在事件处理函数中return一个对象，小程序会默认把当前页面的标题，路径及页面截图返回</p></blockquote> <h2 id="request请求后台接口"><a href="#request请求后台接口" class="header-anchor">#</a> request请求后台接口</h2> <ul><li>wx.request</li> <li>公共链接可以在app.js中设置base_url,获取app.js的内容需要调用const app = getApp()</li></ul> <blockquote><p>消息提示框</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>wx.showToast({
+  title: '成功',
+  icon: 'success',
+  duration: 2000
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>对话框</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>wx.showModal({
+  title: '提示',
+  content: '这是一个模态弹窗',
+  success (res) {
+    if (res.confirm) {
+      console.log('用户点击确定')
+    } else if (res.cancel) {
+      console.log('用户点击取消')
+    }
+  }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="收货地址"><a href="#收货地址" class="header-anchor">#</a> 收货地址</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>wx.chooseAddress({
+  success (res) {
+    console.log(res)
+  }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="http-promise"><a href="#http-promise" class="header-anchor">#</a> http-promise</h2> <blockquote><p>http-promise</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>import {base_url} from './config.js'
+
+class Http{
+  request(url, data=&quot;&quot;, header={}, method=&quot;GET&quot;, dataType=&quot;json&quot;, responseType=&quot;text&quot;){
+     return new Promise((resolve,reject)=&gt;{
+      this._request(url, data, header, method, dataType, responseType,resolve,reject)
+    })
+  }
+  _request(url, data, header, method, dataType, responseType, resolve, reject){
+    wx.request({
+      url: base_url+url,
+      data: data,
+      header: header,
+      method: method,
+      dataType: dataType,
+      responseType: responseType,
+      success: function(res) {
+          const data = res.data;
+          if(data.code==0){
+              resolve(data.data)
+          }else{
+              reject()
+              wx.showModal({
+                title: '错误信息',
+                content: '错误信息',
+              })
+          }
+      },
+      fail: function(res) {
+        reject(res)
+      },
+      complete: function(res) {},
+    })
+  }
+}
+
+export {
+  Http
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><blockquote><p>使用</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code> import {Http} from '../../util/http-promise.js'
+ const http = new Http();
+ http.request(&quot;/getSliders&quot;).then(data=&gt;{
+      console.log(data)
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="获取地理位置"><a href="#获取地理位置" class="header-anchor">#</a> 获取地理位置</h2> <ul><li>有三种方法</li> <li>wx.chooseLocation  用户可以选择位置</li> <li>wx.getLocation  获取坐标位置</li> <li>wx.openLocation 微信内置地图查看位置</li></ul> <h2 id="自定义组件"><a href="#自定义组件" class="header-anchor">#</a> 自定义组件</h2> <blockquote><p>index.json中</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;component&quot;: true,   //代表是一个组件
+  &quot;usingComponents&quot;: {}
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>引用组件
+<ul><li>lesson-cpm 组件名称</li> <li>/conponents/less/less 组件路径</li></ul></li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;usingComponents&quot;: {
+    &quot;lesson-cpm&quot;:&quot;/conponents/less/less&quot; 
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><ul><li>页面向组件传递参数有两种方式
+<ul><li>以properties属性的方式传递<div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;lesson-cpm info=&quot;{{info}}&quot;&gt;&lt;/lesson-cpm&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code></code></pre> <div class="line-numbers-wrapper"></div></div></li></ul> <blockquote><p>组件的wxml</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;text&gt;{{info.name}}&lt;/text&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>组件的js中</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code> properties: {
+    info:{
+      type:Object,
+      value:{}
+    }
+	也可以是
+	info:Object
+  },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><ul><li><p>以data的方式传递</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;lesson-cpm data-info=&quot;{{info}}&quot;&gt;&lt;/lesson-cpm&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>组件的js中</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code> methods: {
+     onTap(){
+       console.log(this.dataset)
+       this.setData({
+         info:this.dataset.info
+       })
+     }
+   }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><blockquote><p>控制台打印</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>{info: {…}}
+info: {name: &quot;sj&quot;, age: 10}
+__proto__: Object
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code></code></pre> <div class="line-numbers-wrapper"></div></div></li></ul></li> <li>组件向页面里传递参数
+<ul><li><p>需要在组件中触发事件，页面监听事件来传递参数</p> <blockquote><p>组件js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>methods: {
+    onTap(){
+      let detail={
+        name:&quot;sss&quot;
+      }
+      this.triggerEvent(&quot;myEvent&quot;,detail,{})
+    }
+  }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><blockquote><p>页面wxml</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;lesson-cpm bind:myEvent=&quot;onMyEvent&quot;&gt;&lt;/lesson-cpm&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><blockquote><p>页面js</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>onMyEvent(e){
+    console.log(e)
+  },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><p>控制台打印</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>{type: &quot;myEvent&quot;, timeStamp: 4773, target: {…}, currentTarget: {…}, mark: {…}, …}
+changedTouches: undefined
+currentTarget: {id: &quot;&quot;, dataset: {…}}
+detail: {name: &quot;sss&quot;}
+mark: {}
+mut: false
+target: {id: &quot;&quot;, dataset: {…}}
+timeStamp: 4773
+touches: undefined
+type: &quot;myEvent&quot;
+_requireActive: undefined
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></li></ul></li></ul> <h2 id="支付功能"><a href="#支付功能" class="header-anchor">#</a> 支付功能</h2> <p>首先wx.login()获取code,送给后台，后台返回值之后拿上数据调用wx.requestPayment()</p> <h2 id="小程序插槽-slot"><a href="#小程序插槽-slot" class="header-anchor">#</a> 小程序插槽 slot</h2> <ul><li>默认是一个插槽 如果想要使用多个插槽 需要在js中配置<div class="language- line-numbers-mode"><pre class="language-text"><code>options:{
+    multipleSlots:true  //启动多个插槽
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li>区分插槽使用哪个需要定义name属性</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;slot name=&quot;after&quot;&gt;&lt;/slot&gt;
+&lt;slot name=&quot;before&quot;&gt;&lt;/slot&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><blockquote><p>使用的时候</p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;text slot=&quot;before&quot;&gt;&lt;/text&gt;
+&lt;text slot=&quot;after&quot;&gt;&lt;/text&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h2 id="小程序跳转"><a href="#小程序跳转" class="header-anchor">#</a> 小程序跳转</h2> <p>navigator 不能view</p> <h2 id="设置缓存-有两种方法"><a href="#设置缓存-有两种方法" class="header-anchor">#</a> 设置缓存 有两种方法</h2> <ul><li>异步<div class="language- line-numbers-mode"><pre class="language-text"><code>wx.setStorage({
+      key: '',
+      data: '',
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></li> <li>同步<div class="language- line-numbers-mode"><pre class="language-text"><code>wx.setStorageSync(key, data)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ul> <h2 id="清除缓存"><a href="#清除缓存" class="header-anchor">#</a> 清除缓存</h2> <ul><li>wx.clearStorage() 全部清除</li> <li>wx.removeStorage({
+key: '',
+success: function(res) {},
+}) 清除一个</li></ul> <h2 id="设置等待层"><a href="#设置等待层" class="header-anchor">#</a> 设置等待层</h2> <ul><li>wx.showLoading({
+title: '正在加载中...',
+})</li> <li>wx.showNavigationBarLoading()</li></ul> <h2 id="设置data的两种方式"><a href="#设置data的两种方式" class="header-anchor">#</a> 设置data的两种方式</h2> <ul><li>this.data.hasMore  不会驱动视图更新</li> <li>this.setData({})   会绑定到页面中</li></ul> <h2 id="返回之前页面"><a href="#返回之前页面" class="header-anchor">#</a> 返回之前页面</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>wx.navigateBack({
+   delta:1  //返回第一页	
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>##页面上拉触底事件触发时距页面底部距离，单位为px。
+.json文件</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>onReachBottomDistance:50  默认是50
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="wxs文件"><a href="#wxs文件" class="header-anchor">#</a> wxs文件</h2> <ul><li>wxs(WeiXin Script) 是小程序的一套脚本语言，结合WXML可以构建出页面的结构</li> <li>注意
+1.wxs不依赖与运行时的基础库版本，可以在所有版本的小程序中运行
+2.wxs与javascript是不同的语言，有自己的语法，并不和JavaScript一致
+3.wxs的运行环境和其他Javascript代码是隔离的，wxs中不能调用其他JavaScript文件中定义的函数，也不能调用小程序提供的API
+4.wxs函数不能作为组件的事件回调
+5.由于运行环境的差异，在IOS设备上小程序内的wxs会比JavaScript代码快2-20倍，在android设备上二者运行效率无差异</li></ul> <h2 id="scroll-view"><a href="#scroll-view" class="header-anchor">#</a> scroll-view</h2> <ul><li>如果设置了scroll-y 必须给高度才能生效</li> <li>是无法触发 onPullDownRefresh</li> <li>设置高度可以通过rpx来自适应也可以通过 wx.getSystemInfoSync()来获取设备的信息来设置</li></ul> <h2 id="常见问题"><a href="#常见问题" class="header-anchor">#</a> 常见问题</h2> <ul><li>使用weui的时候button会出现button:not(type=size)的样式问题,把配置里的style:v2去掉即可</li></ul> <h2 id="组件间的传参"><a href="#组件间的传参" class="header-anchor">#</a> 组件间的传参</h2> <ul><li>1.利用data-xxx的属性</li> <li>2.利用xx的属性在自定义组件中通过properties属性里获取</li> <li>3.利用wx.navigateTo({url:&quot;xxx?id=&quot;+xxx}) 获取地址拼接 然后在onLoad: function (options) {}中的options参数里获取</li> <li>4.通过eventChannel向被打开页面传送数据</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>wx.navigateTo({
+  url: 'test?id=1',
+  events: {
+    // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+    acceptDataFromOpenedPage: function(data) {
+      console.log(data)
+    },
+    someEvent: function(data) {
+      console.log(data)
+    }
+    ...
+  },
+  success: function(res) {
+    // 通过eventChannel向被打开页面传送数据
+    res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+  }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><div class="language- line-numbers-mode"><pre class="language-text"><code>Page({
+  onLoad: function(option){
+    console.log(option.query)
+    const eventChannel = this.getOpenerEventChannel()
+    eventChannel.emit('acceptDataFromOpenedPage', {data: 'test'});
+    eventChannel.emit('someEvent', {data: 'test'});
+    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
+    eventChannel.on('acceptDataFromOpenerPage', function(data) {
+      console.log(data)
+    })
+  }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">最后更新时间: </span> <span class="time">2020/9/3 下午6:29:26</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><canvas id="vuepress-canvas-ribbon"></canvas><canvas id="vuepress-canvas-cursor"></canvas><div></div><!----><div class="reco-bgm-panel" data-v-39f9e6e0><audio id="bgm" src="https://cdn.jsdelivr.net/gh/fudalijunyi/cdn/MP3/年轮.mp3" data-v-39f9e6e0></audio> <div class="reco-float-box" style="bottom:10px;z-index:999999;display:none;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><img src="https://cdn.jsdelivr.net/gh/fudalijunyi/picture-bed/img/20200715154924.png" data-v-39f9e6e0></div> <div class="reco-bgm-box" style="left:10px;bottom:10px;z-index:999999;" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="reco-bgm-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/fudalijunyi/picture-bed/img/20200715154924.png);" data-v-39f9e6e0><div class="mini-operation" style="display:none;" data-v-39f9e6e0><i class="reco-bgm reco-bgm-pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play" style="display:none;" data-v-39f9e6e0></i></div> <div class="falut-message" style="display:none;" data-v-39f9e6e0>
+          播放失败
+        </div></div> <div class="reco-bgm-info" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-music music" data-v-39f9e6e0></i>年轮</div> <div class="info-box" data-v-39f9e6e0><i class="reco-bgm reco-bgm-artist" data-v-39f9e6e0></i>张碧晨</div> <div class="reco-bgm-progress" data-v-39f9e6e0><div class="progress-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div> <div class="reco-bgm-operation" data-v-39f9e6e0><i class="reco-bgm reco-bgm-last last" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-pause pause" style="display:none;" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-play play" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-next next" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-volume1 volume" data-v-39f9e6e0></i> <i class="reco-bgm reco-bgm-mute mute" style="display:none;" data-v-39f9e6e0></i> <div class="volume-bar" data-v-39f9e6e0><div class="bar" data-v-39f9e6e0></div></div></div></div> <div class="reco-bgm-left-box" data-v-39f9e6e0 data-v-41bcba48 data-v-39f9e6e0><i class="reco-bgm reco-bgm-left" data-v-39f9e6e0></i></div></div></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="z-index:999999;right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:none;" data-v-5775ee02></i></div> <canvas id="banniang" width="240" height="352" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/assets/js/app.e32bf087.js" defer></script><script src="/assets/js/3.9f375187.js" defer></script><script src="/assets/js/1.2449ce55.js" defer></script><script src="/assets/js/41.26c8593b.js" defer></script>
+  </body>
+</html>
